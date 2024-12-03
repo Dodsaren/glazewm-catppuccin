@@ -1,0 +1,53 @@
+.bar {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--catppuccin-crust);
+}
+
+.right,
+.left,
+.workspaces,
+.statuses,
+.wm {
+  display: flex;
+}
+
+.wm {
+  padding-inline: 0.5rem;
+}
+
+.wm button {
+  margin-inline: 0.5rem;
+}
+
+.statuses {
+  background-color: var(--catppuccin-surface0);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.4rem;
+  padding-right: 0.3rem;
+  background-color: var(--catppuccin-green);
+  color: black;
+}
+
+.statuses,
+.icon {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.status {
+  padding-inline: 0.5rem;
+}

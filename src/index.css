@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "JetBrains Mono Nerd Font";
+  src: url("/src/assets/fonts/JetBrainsMonoNerdFont-Regular.ttf")
+    format("truetype");
+  font-weight: normal; /* Thin weight */
+  font-style: normal;
+}
+
+:root {
+  /* Mocha Theme (Default) */
+  --catppuccin-mocha-rosewater: hsl(10deg, 56%, 91%);
+  --catppuccin-mocha-flamingo: hsl(0deg, 59%, 88%);
+  --catppuccin-mocha-pink: hsl(316deg, 72%, 86%);
+  --catppuccin-mocha-mauve: hsl(267deg, 84%, 81%);
+  --catppuccin-mocha-red: hsl(343deg, 81%, 75%);
+  --catppuccin-mocha-maroon: hsl(350deg, 65%, 77%);
+  --catppuccin-mocha-peach: hsl(23deg, 92%, 75%);
+  --catppuccin-mocha-yellow: hsl(41deg, 86%, 83%);
+  --catppuccin-mocha-green: hsl(115deg, 54%, 76%);
+  --catppuccin-mocha-teal: hsl(170deg, 57%, 73%);
+  --catppuccin-mocha-sky: hsl(189deg, 71%, 73%);
+  --catppuccin-mocha-sapphire: hsl(199deg, 76%, 69%);
+  --catppuccin-mocha-blue: hsl(217deg, 92%, 76%);
+  --catppuccin-mocha-lavender: hsl(232deg, 97%, 85%);
+  --catppuccin-mocha-text: hsl(226deg, 64%, 88%);
+  --catppuccin-mocha-subtext1: hsl(227deg, 35%, 80%);
+  --catppuccin-mocha-subtext0: hsl(228deg, 24%, 72%);
+  --catppuccin-mocha-overlay2: hsl(228deg, 17%, 64%);
+  --catppuccin-mocha-overlay1: hsl(230deg, 13%, 55%);
+  --catppuccin-mocha-overlay0: hsl(231deg, 11%, 47%);
+  --catppuccin-mocha-surface2: hsl(233deg, 12%, 39%);
+  --catppuccin-mocha-surface1: hsl(234deg, 13%, 31%);
+  --catppuccin-mocha-surface0: hsl(237deg, 16%, 23%);
+  --catppuccin-mocha-base: hsl(240deg, 21%, 15%);
+  --catppuccin-mocha-mantle: hsl(240deg, 21%, 12%);
+  --catppuccin-mocha-crust: hsl(240deg, 23%, 9%);
+
+  /* Macchiato Theme */
+  --catppuccin-macchiato-rosewater: hsl(10deg, 58%, 90%);
+  --catppuccin-macchiato-flamingo: hsl(0deg, 59%, 87%);
+  --catppuccin-macchiato-pink: hsl(316deg, 74%, 85%);
+  --catppuccin-macchiato-mauve: hsl(267deg, 83%, 80%);
+  --catppuccin-macchiato-red: hsl(343deg, 81%, 75%);
+  --catppuccin-macchiato-maroon: hsl(350deg, 66%, 76%);
+  --catppuccin-macchiato-peach: hsl(23deg, 92%, 75%);
+  --catppuccin-macchiato-yellow: hsl(41deg, 86%, 83%);
+  --catppuccin-macchiato-green: hsl(115deg, 54%, 76%);
+  --catppuccin-macchiato-teal: hsl(170deg, 57%, 73%);
+  --catppuccin-macchiato-sky: hsl(189deg, 71%, 73%);
+  --catppuccin-macchiato-sapphire: hsl(199deg, 76%, 69%);
+  --catppuccin-macchiato-blue: hsl(217deg, 92%, 76%);
+  --catppuccin-macchiato-lavender: hsl(232deg, 97%, 85%);
+  --catppuccin-macchiato-text: hsl(227deg, 68%, 86%);
+  --catppuccin-macchiato-subtext1: hsl(227deg, 37%, 78%);
+  --catppuccin-macchiato-subtext0: hsl(228deg, 25%, 70%);
+  --catppuccin-macchiato-overlay2: hsl(228deg, 18%, 62%);
+  --catppuccin-macchiato-overlay1: hsl(230deg, 14%, 53%);
+  --catppuccin-macchiato-overlay0: hsl(231deg, 12%, 45%);
+  --catppuccin-macchiato-surface2: hsl(233deg, 13%, 37%);
+  --catppuccin-macchiato-surface1: hsl(234deg, 14%, 29%);
+  --catppuccin-macchiato-surface0: hsl(237deg, 17%, 21%);
+  --catppuccin-macchiato-base: hsl(240deg, 22%, 13%);
+  --catppuccin-macchiato-mantle: hsl(240deg, 22%, 10%);
+  --catppuccin-macchiato-crust: hsl(240deg, 24%, 7%);
+
+  /* Frappé Theme */
+  --catppuccin-frappe-rosewater: hsl(10deg, 57%, 88%);
+  --catppuccin-frappe-flamingo: hsl(0deg, 59%, 85%);
+  --catppuccin-frappe-pink: hsl(316deg, 73%, 83%);
+  --catppuccin-frappe-mauve: hsl(267deg, 82%, 78%);
+  --catppuccin-frappe-red: hsl(343deg, 81%, 73%);
+  --catppuccin-frappe-maroon: hsl(350deg, 66%, 74%);
+  --catppuccin-frappe-peach: hsl(23deg, 92%, 73%);
+  --catppuccin-frappe-yellow: hsl(41deg, 86%, 81%);
+  --catppuccin-frappe-green: hsl(115deg, 54%, 74%);
+  --catppuccin-frappe-teal: hsl(170deg, 57%, 71%);
+  --catppuccin-frappe-sky: hsl(189deg, 71%, 71%);
+  --catppuccin-frappe-sapphire: hsl(199deg, 76%, 67%);
+  --catppuccin-frappe-blue: hsl(217deg, 92%, 74%);
+  --catppuccin-frappe-lavender: hsl(232deg, 97%, 83%);
+  --catppuccin-frappe-text: hsl(227deg, 70%, 84%);
+  --catppuccin-frappe-subtext1: hsl(227deg, 39%, 76%);
+  --catppuccin-frappe-subtext0: hsl(228deg, 26%, 68%);
+  --catppuccin-frappe-overlay2: hsl(228deg, 19%, 60%);
+  --catppuccin-frappe-overlay1: hsl(230deg, 15%, 51%);
+  --catppuccin-frappe-overlay0: hsl(231deg, 13%, 43%);
+  --catppuccin-frappe-surface2: hsl(233deg, 14%, 35%);
+  --catppuccin-frappe-surface1: hsl(234deg, 15%, 27%);
+  --catppuccin-frappe-surface0: hsl(237deg, 18%, 19%);
+  --catppuccin-frappe-base: hsl(240deg, 23%, 11%);
+  --catppuccin-frappe-mantle: hsl(240deg, 23%, 8%);
+  --catppuccin-frappe-crust: hsl(240deg, 25%, 5%);
+
+  /* Latte Theme */
+  --catppuccin-latte-rosewater: hsl(11deg, 59%, 67%);
+  --catppuccin-latte-flamingo: hsl(0deg, 60%, 64%);
+  --catppuccin-latte-pink: hsl(316deg, 73%, 69%);
+  --catppuccin-latte-mauve: hsl(267deg, 83%, 68%);
+  --catppuccin-latte-red: hsl(343deg, 81%, 62%);
+  --catppuccin-latte-maroon: hsl(350deg, 65%, 62%);
+  --catppuccin-latte-peach: hsl(23deg, 92%, 62%);
+  --catppuccin-latte-yellow: hsl(41deg, 86%, 70%);
+  --catppuccin-latte-green: hsl(115deg, 54%, 63%);
+  --catppuccin-latte-teal: hsl(170deg, 57%, 60%);
+  --catppuccin-latte-sky: hsl(189deg, 71%, 60%);
+  --catppuccin-latte-sapphire: hsl(199deg, 76%, 56%);
+  --catppuccin-latte-blue: hsl(217deg, 92%, 63%);
+  --catppuccin-latte-lavender: hsl(232deg, 97%, 72%);
+  --catppuccin-latte-text: hsl(234deg, 16%, 35%);
+  --catppuccin-latte-subtext1: hsl(233deg, 13%, 41%);
+  --catppuccin-latte-subtext0: hsl(233deg, 10%, 47%);
+  --catppuccin-latte-overlay2: hsl(231deg, 7%, 53%);
+  --catppuccin-latte-overlay1: hsl(230deg, 5%, 59%);
+  --catppuccin-latte-overlay0: hsl(228deg, 4%, 65%);
+  --catppuccin-latte-surface2: hsl(227deg, 5%, 71%);
+  --catppuccin-latte-surface1: hsl(225deg, 6%, 77%);
+  --catppuccin-latte-surface0: hsl(223deg, 8%, 83%);
+  --catppuccin-latte-base: hsl(220deg, 23%, 95%);
+  --catppuccin-latte-mantle: hsl(220deg, 23%, 92%);
+  --catppuccin-latte-crust: hsl(220deg, 21%, 89%);
+
+  /* Default theme (Mocha) */
+  --catppuccin-rosewater: var(--catppuccin-mocha-rosewater);
+  --catppuccin-flamingo: var(--catppuccin-mocha-flamingo);
+  --catppuccin-pink: var(--catppuccin-mocha-pink);
+  --catppuccin-mauve: var(--catppuccin-mocha-mauve);
+  --catppuccin-red: var(--catppuccin-mocha-red);
+  --catppuccin-maroon: var(--catppuccin-mocha-maroon);
+  --catppuccin-peach: var(--catppuccin-mocha-peach);
+  --catppuccin-yellow: var(--catppuccin-mocha-yellow);
+  --catppuccin-green: var(--catppuccin-mocha-green);
+  --catppuccin-teal: var(--catppuccin-mocha-teal);
+  --catppuccin-sky: var(--catppuccin-mocha-sky);
+  --catppuccin-sapphire: var(--catppuccin-mocha-sapphire);
+  --catppuccin-blue: var(--catppuccin-mocha-blue);
+  --catppuccin-lavender: var(--catppuccin-mocha-lavender);
+  --catppuccin-text: var(--catppuccin-mocha-text);
+  --catppuccin-subtext1: var(--catppuccin-mocha-subtext1);
+  --catppuccin-subtext0: var(--catppuccin-mocha-subtext0);
+  --catppuccin-overlay2: var(--catppuccin-mocha-overlay2);
+  --catppuccin-overlay1: var(--catppuccin-mocha-overlay1);
+  --catppuccin-overlay0: var(--catppuccin-mocha-overlay0);
+  --catppuccin-surface2: var(--catppuccin-mocha-surface2);
+  --catppuccin-surface1: var(--catppuccin-mocha-surface1);
+  --catppuccin-surface0: var(--catppuccin-mocha-surface0);
+  --catppuccin-base: var(--catppuccin-mocha-base);
+  --catppuccin-mantle: var(--catppuccin-mocha-mantle);
+  --catppuccin-crust: var(--catppuccin-mocha-crust);
+}
+
+.theme-macchiato {
+  --catppuccin-rosewater: var(--catppuccin-macchiato-rosewater);
+  --catppuccin-flamingo: var(--catppuccin-macchiato-flamingo);
+  --catppuccin-pink: var(--catppuccin-macchiato-pink);
+  --catppuccin-mauve: var(--catppuccin-macchiato-mauve);
+  --catppuccin-red: var(--catppuccin-macchiato-red);
+  --catppuccin-maroon: var(--catppuccin-macchiato-maroon);
+  --catppuccin-peach: var(--catppuccin-macchiato-peach);
+  --catppuccin-yellow: var(--catppuccin-macchiato-yellow);
+  --catppuccin-green: var(--catppuccin-macchiato-green);
+  --catppuccin-teal: var(--catppuccin-macchiato-teal);
+  --catppuccin-sky: var(--catppuccin-macchiato-sky);
+  --catppuccin-sapphire: var(--catppuccin-macchiato-sapphire);
+  --catppuccin-blue: var(--catppuccin-macchiato-blue);
+  --catppuccin-lavender: var(--catppuccin-macchiato-lavender);
+  --catppuccin-text: var(--catppuccin-macchiato-text);
+  --catppuccin-subtext1: var(--catppuccin-macchiato-subtext1);
+  --catppuccin-subtext0: var(--catppuccin-macchiato-subtext0);
+  --catppuccin-overlay2: var(--catppuccin-macchiato-overlay2);
+  --catppuccin-overlay1: var(--catppuccin-macchiato-overlay1);
+  --catppuccin-overlay0: var(--catppuccin-macchiato-overlay0);
+  --catppuccin-surface2: var(--catppuccin-macchiato-surface2);
+  --catppuccin-surface1: var(--catppuccin-macchiato-surface1);
+  --catppuccin-surface0: var(--catppuccin-macchiato-surface0);
+  --catppuccin-base: var(--catppuccin-macchiato-base);
+  --catppuccin-mantle: var(--catppuccin-macchiato-mantle);
+  --catppuccin-crust: var(--catppuccin-macchiato-crust);
+}
+
+.theme-frappe {
+  --catppuccin-rosewater: var(--catppuccin-frappe-rosewater);
+  --catppuccin-flamingo: var(--catppuccin-frappe-flamingo);
+  --catppuccin-pink: var(--catppuccin-frappe-pink);
+  --catppuccin-mauve: var(--catppuccin-frappe-mauve);
+  --catppuccin-red: var(--catppuccin-frappe-red);
+  --catppuccin-maroon: var(--catppuccin-frappe-maroon);
+  --catppuccin-peach: var(--catppuccin-frappe-peach);
+  --catppuccin-yellow: var(--catppuccin-frappe-yellow);
+  --catppuccin-green: var(--catppuccin-frappe-green);
+  --catppuccin-teal: var(--catppuccin-frappe-teal);
+  --catppuccin-sky: var(--catppuccin-frappe-sky);
+  --catppuccin-sapphire: var(--catppuccin-frappe-sapphire);
+  --catppuccin-blue: var(--catppuccin-frappe-blue);
+  --catppuccin-lavender: var(--catppuccin-frappe-lavender);
+  --catppuccin-text: var(--catppuccin-frappe-text);
+  --catppuccin-subtext1: var(--catppuccin-frappe-subtext1);
+  --catppuccin-subtext0: var(--catppuccin-frappe-subtext0);
+  --catppuccin-overlay2: var(--catppuccin-frappe-overlay2);
+  --catppuccin-overlay1: var(--catppuccin-frappe-overlay1);
+  --catppuccin-overlay0: var(--catppuccin-frappe-overlay0);
+  --catppuccin-surface2: var(--catppuccin-frappe-surface2);
+  --catppuccin-surface1: var(--catppuccin-frappe-surface1);
+  --catppuccin-surface0: var(--catppuccin-frappe-surface0);
+  --catppuccin-base: var(--catppuccin-frappe-base);
+  --catppuccin-mantle: var(--catppuccin-frappe-mantle);
+  --catppuccin-crust: var(--catppuccin-frappe-crust);
+}
+
+.theme-mocha {
+  --catppuccin-rosewater: var(--catppuccin-mocha-rosewater);
+  --catppuccin-flamingo: var(--catppuccin-mocha-flamingo);
+  --catppuccin-pink: var(--catppuccin-mocha-pink);
+  --catppuccin-mauve: var(--catppuccin-mocha-mauve);
+  --catppuccin-red: var(--catppuccin-mocha-red);
+  --catppuccin-maroon: var(--catppuccin-mocha-maroon);
+  --catppuccin-peach: var(--catppuccin-mocha-peach);
+  --catppuccin-yellow: var(--catppuccin-mocha-yellow);
+  --catppuccin-green: var(--catppuccin-mocha-green);
+  --catppuccin-teal: var(--catppuccin-mocha-teal);
+  --catppuccin-sky: var(--catppuccin-mocha-sky);
+  --catppuccin-sapphire: var(--catppuccin-mocha-sapphire);
+  --catppuccin-blue: var(--catppuccin-mocha-blue);
+  --catppuccin-lavender: var(--catppuccin-mocha-lavender);
+  --catppuccin-text: var(--catppuccin-mocha-text);
+  --catppuccin-subtext1: var(--catppuccin-mocha-subtext1);
+  --catppuccin-subtext0: var(--catppuccin-mocha-subtext0);
+  --catppuccin-overlay2: var(--catppuccin-mocha-overlay2);
+  --catppuccin-overlay1: var(--catppuccin-mocha-overlay1);
+  --catppuccin-overlay0: var(--catppuccin-mocha-overlay0);
+  --catppuccin-surface2: var(--catppuccin-mocha-surface2);
+  --catppuccin-surface1: var(--catppuccin-mocha-surface1);
+  --catppuccin-surface0: var(--catppuccin-mocha-surface0);
+  --catppuccin-base: var(--catppuccin-mocha-base);
+  --catppuccin-mantle: var(--catppuccin-mocha-mantle);
+  --catppuccin-crust: var(--catppuccin-mocha-crust);
+}
+
+.theme-latte {
+  --catppuccin-rosewater: var(--catppuccin-latte-rosewater);
+  --catppuccin-flamingo: var(--catppuccin-latte-flamingo);
+  --catppuccin-pink: var(--catppuccin-latte-pink);
+  --catppuccin-mauve: var(--catppuccin-latte-mauve);
+  --catppuccin-red: var(--catppuccin-latte-red);
+  --catppuccin-maroon: var(--catppuccin-latte-maroon);
+  --catppuccin-peach: var(--catppuccin-latte-peach);
+  --catppuccin-yellow: var(--catppuccin-latte-yellow);
+  --catppuccin-green: var(--catppuccin-latte-green);
+  --catppuccin-teal: var(--catppuccin-latte-teal);
+  --catppuccin-sky: var(--catppuccin-latte-sky);
+  --catppuccin-sapphire: var(--catppuccin-latte-sapphire);
+  --catppuccin-blue: var(--catppuccin-latte-blue);
+  --catppuccin-lavender: var(--catppuccin-latte-lavender);
+  --catppuccin-text: var(--catppuccin-latte-text);
+  --catppuccin-subtext1: var(--catppuccin-latte-subtext1);
+  --catppuccin-subtext0: var(--catppuccin-latte-subtext0);
+  --catppuccin-overlay2: var(--catppuccin-latte-overlay2);
+  --catppuccin-overlay1: var(--catppuccin-latte-overlay1);
+  --catppuccin-overlay0: var(--catppuccin-latte-overlay0);
+  --catppuccin-surface2: var(--catppuccin-latte-surface2);
+  --catppuccin-surface1: var(--catppuccin-latte-surface1);
+  --catppuccin-surface0: var(--catppuccin-latte-surface0);
+  --catppuccin-base: var(--catppuccin-latte-base);
+  --catppuccin-mantle: var(--catppuccin-latte-mantle);
+  --catppuccin-crust: var(--catppuccin-latte-crust);
+}
+
+body {
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  background: var(--catppuccin-base);
+  color: var(--catppuccin-text);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-shadow: none;
+  border: none;
+  background-color: var(--catppuccin-overlay2);
+  color: var(--catppuccin-crust);
+}
+
+button:hover {
+  background-color: var(--catppuccin-overlay1);
+}
+
+button.focused {
+  background-color: var(--catppuccin-mauve);
+}
+
+button.focused:hover {
+  background-color: var(--catppuccin-lavender);
+}
