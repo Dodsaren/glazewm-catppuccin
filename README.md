@@ -41,7 +41,7 @@ Users/<my-user>/.glzr/zebar/glazewm-catppuccin
 |--glazewm-catppuccin.zebar.json
 ```
 
-5. Point you zebar settings startupConfigs to the json to set as default theme.
+5. Point your zebar settings startupConfigs to the json to set as default theme.
 
 zebar/settings.json
 
