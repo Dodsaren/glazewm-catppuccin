@@ -1,6 +1,6 @@
 # Glazewm Catppuccin Zebar theme
 
-Inofficial [Cattpuccin](https://github.com/catppuccin/catppuccin) theme for [Zebar](https://github.com/glzr-io/zebar) with [Glazewm](https://github.com/glzr-io/glazewm).
+Inofficial [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [Zebar](https://github.com/glzr-io/zebar) with [Glazewm](https://github.com/glzr-io/glazewm).
 
 The theme's visuals is heavily inspired by [catppuccin/tmux](https://github.com/catppuccin/tmux).
 
