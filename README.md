@@ -1,6 +1,6 @@
 # Glazewm Catppuccin Zebar theme
 
-Inofficial [Cattpuccin](https://github.com/catppuccin/catppuccin) theme for [Zebar](https://github.com/glzr-io/zebar) with [Glazewm](https://github.com/glzr-io/glazewm).
+Inofficial [Catppuccin](https://github.com/catppuccin/catppuccin) theme for [Zebar](https://github.com/glzr-io/zebar) with [Glazewm](https://github.com/glzr-io/glazewm).
 
 The theme's visuals is heavily inspired by [catppuccin/tmux](https://github.com/catppuccin/tmux).
 
@@ -41,7 +41,7 @@ Users/<my-user>/.glzr/zebar/glazewm-catppuccin
 |--glazewm-catppuccin.zebar.json
 ```
 
-5. Point you zebar settings startupConfigs to the json to set as default theme.
+5. Point your zebar settings startupConfigs to the json to set as default theme.
 
 zebar/settings.json
 
